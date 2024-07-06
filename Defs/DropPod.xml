@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="WarPodBase" ParentName="BuildingBase" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Security</designationCategory>
+    <uiOrder>2200</uiOrder>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>2400</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_NeedsFuelingPort</li>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>WarPod</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <uiIconScale>0.65</uiIconScale>
+  </ThingDef>
+
+  <ThingDef ParentName="WarPodBase">
+    <defName>WarPod_HighExplosive</defName>
+    <label>high explosive warpod</label>
+    <description>A launchable sub-orbital pod fitted with a high-explosive warhead assembly. Can be used to lead attacks or provide supporting fire at distant locations, or for defensive purposes. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Special/WarPod_HighExplosive</texPath>
+    </graphicData>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>120</Chemfuel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <chanceToStartFire>0.08</chanceToStartFire>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="WarPodBase">
+    <defName>WarPod_EMP</defName>
+    <label>EMP warpod</label>
+    <description>A launchable sub-orbital pod fitted with a heavy electromagnetic pulse assembly. Can be used to lead attacks or provide supporting fire at distant locations, or for defensive purposes. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Special/WarPod_EMP</texPath>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>11.9</explosiveRadius>
+        <explosiveDamageType>EMP</explosiveDamageType>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <chanceToStartFire>0.03</chanceToStartFire>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="WarPodBase">
+    <defName>WarPod_Antigrain</defName>
+    <label>antigrain warpod</label>
+    <description>A launchable sub-orbital pod fitted with an antigrain warhead. Can be used to lead attacks or provide supporting fire at distant locations, or for defensive purposes. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Special/WarPod_Antigrain</texPath>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Shell_AntigrainWarhead>120</Shell_AntigrainWarhead>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>14.9</explosiveRadius>
+        <explosiveDamageType>BombSuper</explosiveDamageType>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <chanceToStartFire>0.22</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <wickTicks>60~120</wickTicks>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

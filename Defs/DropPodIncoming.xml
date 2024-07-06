@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Warpods -->
+
+  <ThingDef Name="WarPodIncomingBase" ParentName="SkyfallerBase" Abstract="True">
+    <size>(1,1)</size>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Special/WarPod_Incoming</texPath>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.9</drawSize>
+    </graphicData>
+    <skyfaller>
+      <anticipationSound>MortarRound_PreImpact</anticipationSound>
+      <!-- [COMMENT: removed] <anticipationSound>DropPod_Fall</anticipationSound> -->
+      <anticipationSoundTicks>80</anticipationSoundTicks>
+      <!-- [COMMENT: redundant?] <ticksToImpactRange>0</ticksToImpactRange> -->
+      <movementType>ConstantSpeed</movementType>
+      <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+      <shadowSize>(2, 2)</shadowSize>
+      <motesPerCell>1</motesPerCell>
+      <explosionRadius>7</explosionRadius>
+      <cameraShake>0.2</cameraShake>
+      <rubbleShrapnelCountRange>
+        <min>80</min>
+        <max>150</max>
+      </rubbleShrapnelCountRange>
+      <shrapnelDistanceFactor>0.5</shrapnelDistanceFactor>
+      <angleCurve>
+        <points><li>(0,0)</li></points>
+      </angleCurve>
+      <rotationCurve>
+        <points><li>(0,0)</li></points>
+      </rotationCurve>
+      <speed>1.2</speed>
+    </skyfaller>
+  </ThingDef>
+
+<!-- warhead delivery -->
+
+  <ThingDef ParentName="WarPodIncomingBase">
+    <defName>WarPod_HighExplosiveIncoming</defName>
+    <label>high explosive warpod (incoming)</label>
+    <skyfaller>
+      <explosionDamage>Bomb</explosionDamage>
+      <metalShrapnelCountRange>
+        <min>6</min>
+        <max>10</max>
+      </metalShrapnelCountRange>
+      <shrapnelDistanceFactor>1</shrapnelDistanceFactor>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="WarPodIncomingBase">
+    <defName>WarPod_EMPIncoming</defName>
+    <label>EMP warpod (incoming)</label>
+    <skyfaller>
+      <explosionDamage>EMP</explosionDamage>
+      <explosionRadius>11.9</explosionRadius>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="WarPodIncomingBase">
+    <defName>WarPod_AntigrainIncoming</defName>
+    <label>antigrain warpod (incoming)</label>
+    <skyfaller>
+      <soundImpact>Explosion_GiantBomb</soundImpact>
+      <explosionRadius>14.9</explosionRadius>
+      <explosionDamage>BombSuper</explosionDamage>
+      <shrapnelDistanceFactor>1</shrapnelDistanceFactor>
+    </skyfaller>
+  </ThingDef>
+
+<!-- NOT INCLUDED: incendiary/smoke/firefoam; need to look up postExplosionSpawn implementation -->
+
+</Defs>

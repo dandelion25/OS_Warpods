@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="WarPodLeavingBase" ParentName="SkyfallerBase" Abstract="True">
+    <thingClass>FlyShipLeaving</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.9</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>Decelerate</movementType>
+      <reversed>true</reversed>
+      <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+      <shadowSize>(2, 2)</shadowSize>
+      <motesPerCell>1</motesPerCell>
+      <anticipationSound>DropPod_Leaving</anticipationSound>
+      <anticipationSoundTicks>-10</anticipationSoundTicks>
+      <ticksToImpactRange><min>-40</min><max>-15</max></ticksToImpactRange>
+      <angleCurve>
+        <points><li>(0,0)</li></points>
+      </angleCurve>
+      <rotationCurve>
+        <points><li>(0,0)</li></points>
+      </rotationCurve>
+    </skyfaller>
+  </ThingDef>
+
+<!-- warhead delivery -->
+
+  <ThingDef ParentName="WarPodLeavingBase">
+    <defName>WarPod_HighExplosiveLeaving</defName>
+    <label>high explosive warpod (leaving)</label>
+    <graphicData>
+      <texPath>Things/Special/WarPod_HighExplosive</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="WarPodLeavingBase">
+    <defName>WarPod_EMPLeaving</defName>
+    <label>EMP warpod (leaving)</label>
+    <graphicData
+      <texPath>Things/Special/WarPod_EMP</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="WarPodLeavingBase">
+    <defName>WarPod_AntigrainLeaving</defName>
+    <label>antigrain warpod (leaving)</label>
+    <graphicData>
+      <texPath>Things/Special/WarPod_Antigrain</texPath>
+    </graphicData>
+  </ThingDef>
+
+</Defs>
