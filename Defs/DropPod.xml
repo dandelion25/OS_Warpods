@@ -26,7 +26,7 @@
       <li>PlaceWorker_NotUnderRoof</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>WarPod</li>
+      <li>WarPods</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <uiIconScale>0.65</uiIconScale>

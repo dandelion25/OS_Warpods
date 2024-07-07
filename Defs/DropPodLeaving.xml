@@ -38,7 +38,7 @@
   <ThingDef ParentName="WarPodLeavingBase">
     <defName>WarPod_EMPLeaving</defName>
     <label>EMP warpod (leaving)</label>
-    <graphicData
+    <graphicData>
       <texPath>Things/Special/WarPod_EMP</texPath>
     </graphicData>
   </ThingDef>
