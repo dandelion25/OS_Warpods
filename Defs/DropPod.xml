@@ -2,6 +2,7 @@
 <Defs>
   
   <ThingDef Name="WarPodBase" ParentName="BuildingBase" Abstract="True">
+    <designatorDropdown>MJWarPods_Category_PodLauncherWarheads</designatorDropdown>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>

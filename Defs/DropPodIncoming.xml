@@ -65,7 +65,7 @@
     <defName>WarPod_AntigrainIncoming</defName>
     <label>antigrain warpod (incoming)</label>
     <skyfaller>
-      <soundImpact>Explosion_GiantBomb</soundImpact>
+      <!-- nonfunctional; gonna figure this out later. <soundImpact>Explosion_GiantBomb</soundImpact> -->
       <explosionRadius>14.9</explosionRadius>
       <explosionDamage>BombSuper</explosionDamage>
       <shrapnelDistanceFactor>1</shrapnelDistanceFactor>
