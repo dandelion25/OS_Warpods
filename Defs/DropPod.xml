@@ -53,6 +53,9 @@
         <chanceToStartFire>0.08</chanceToStartFire>
         <wickTicks>30~60</wickTicks>
       </li>
+      <li Class="CompProperties_Launchable">
+        <skyfallerLeaving>WarPod_HighExplosiveLeaving</skyfallerLeaving>
+      </li>
     </comps>
   </ThingDef>
 
@@ -75,6 +78,9 @@
         <chanceToStartFire>0.03</chanceToStartFire>
         <wickTicks>30~60</wickTicks>
       </li>
+      <li Class="CompProperties_Launchable">
+        <skyfallerLeaving>WarPod_EMPLeaving</skyfallerLeaving>
+      </li>
     </comps>
   </ThingDef>
 
@@ -88,7 +94,7 @@
     <costList>
       <Steel>50</Steel>
       <ComponentIndustrial>6</ComponentIndustrial>
-      <Shell_AntigrainWarhead>120</Shell_AntigrainWarhead>
+      <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
     </costList>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -100,6 +106,9 @@
         <explosionEffect>GiantExplosion</explosionEffect>
         <explosionSound>Explosion_GiantBomb</explosionSound>
         <wickTicks>60~120</wickTicks>
+      </li>
+      <li Class="CompProperties_Launchable">
+        <skyfallerLeaving>WarPod_AntigrainLeaving</skyfallerLeaving>
       </li>
     </comps>
   </ThingDef>
