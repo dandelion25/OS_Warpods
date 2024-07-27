@@ -1,0 +1,7 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\OS_Warpods\Source\OS_Warpods\obj\Debug\OS_WarPods.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\OS_Warpods\Source\OS_Warpods\obj\Debug\OS_WarPods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\OS_Warpods\Source\OS_Warpods\obj\Debug\OS_WarPods.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\OS_Warpods\Source\OS_Warpods\obj\Debug\OS_WarPods.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\OS_Warpods\Source\OS_Warpods\obj\Debug\OS_WarPods.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\OS_Warpods\Assemblies\OS_WarPods.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\OS_Warpods\Source\OS_Warpods\obj\Debug\OS_WarPods.dll

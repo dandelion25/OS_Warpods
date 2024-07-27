@@ -22,6 +22,9 @@
       <WorkToBuild>2400</WorkToBuild>
       <Flammability>0.5</Flammability>
     </statBases>
+    <inspectorTabs>
+      <li>ITab_ContentsTransporter</li>
+    </inspectorTabs>
     <placeWorkers>
       <li>PlaceWorker_NeedsFuelingPort</li>
       <li>PlaceWorker_NotUnderRoof</li>
@@ -53,8 +56,10 @@
         <chanceToStartFire>0.08</chanceToStartFire>
         <wickTicks>30~60</wickTicks>
       </li>
-      <li Class="CompProperties_Launchable">
-        <skyfallerLeaving>WarPod_HighExplosiveLeaving</skyfallerLeaving>
+      <li Class="CompProperties_UtilityLaunchable">
+        <forcedMissRadius>3.5</forcedMissRadius>
+        <utilityPodDef>WarPod_HighExplosiveLink</utilityPodDef>
+        <!-- <skyfallerLeaving>WarPod_EMPLeaving</skyfallerLeaving> -->
       </li>
     </comps>
   </ThingDef>
@@ -78,8 +83,10 @@
         <chanceToStartFire>0.03</chanceToStartFire>
         <wickTicks>30~60</wickTicks>
       </li>
-      <li Class="CompProperties_Launchable">
-        <skyfallerLeaving>WarPod_EMPLeaving</skyfallerLeaving>
+      <li Class="CompProperties_UtilityLaunchable">
+        <forcedMissRadius>3.5</forcedMissRadius>
+        <utilityPodDef>WarPod_EMPLink</utilityPodDef>
+        <!-- <skyfallerLeaving>WarPod_EMPLeaving</skyfallerLeaving> -->
       </li>
     </comps>
   </ThingDef>
@@ -107,8 +114,10 @@
         <explosionSound>Explosion_GiantBomb</explosionSound>
         <wickTicks>60~120</wickTicks>
       </li>
-      <li Class="CompProperties_Launchable">
-        <skyfallerLeaving>WarPod_AntigrainLeaving</skyfallerLeaving>
+      <li Class="CompProperties_UtilityLaunchable">
+        <forcedMissRadius>3.5</forcedMissRadius>
+        <utilityPodDef>WarPod_AntigrainLink</utilityPodDef>
+        <!-- <skyfallerLeaving>WarPod_EMPLeaving</skyfallerLeaving> -->
       </li>
     </comps>
   </ThingDef>

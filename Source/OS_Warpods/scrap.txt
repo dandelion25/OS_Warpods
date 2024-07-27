@@ -1,0 +1,5 @@
+
+	<Reference Include="UnityEngine.IMGUIModule">
+		<HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+		<Private>False</Private>
+	</Reference>

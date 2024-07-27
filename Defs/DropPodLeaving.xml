@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef Name="WarPodLeavingBase" ParentName="SkyfallerBase" Abstract="True">
-    <thingClass>FlyShipLeaving</thingClass>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>OS_WarPods.UtilityPodLeaving</thingClass>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutFlying</shaderType>

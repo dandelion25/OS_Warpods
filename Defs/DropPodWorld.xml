@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorldObjectDef Name ="WarPodWorldObject_Base" Abstract="True">
+    <worldObjectClass>OS_WarPods.UtilityPodWorldObject</worldObjectClass>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>false</expandingIcon>
+  </WorldObjectDef>
+  
+  
+  <!-- listed warhead types -->
+
+  <WorldObjectDef ParentName="WarPodWorldObject_Base">
+    <defName>WarPod_HighExplosiveWorld</defName>
+    <label>high explosive pod</label>
+    <description>Warhead in flight.</description>
+    <texture>Things/Special/WarPod_HighExplosive</texture>
+  </WorldObjectDef>
+
+  <WorldObjectDef ParentName="WarPodWorldObject_Base">
+    <defName>WarPod_EMPWorld</defName>
+    <label>EMP pod</label>
+    <description>Warhead in flight.</description>
+    <texture>Things/Special/WarPod_EMP</texture>
+  </WorldObjectDef>
+
+  <WorldObjectDef ParentName="WarPodWorldObject_Base">
+    <defName>WarPod_AntigrainWorld</defName>
+    <label>Antigrain pod</label>
+    <description>Warhead in flight.</description>
+    <texture>Things/Special/WarPod_Antigrain</texture>
+  </WorldObjectDef>
+
+
+</Defs>

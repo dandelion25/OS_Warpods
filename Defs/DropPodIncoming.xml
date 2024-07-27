@@ -4,6 +4,8 @@
 <!-- Warpods -->
 
   <ThingDef Name="WarPodIncomingBase" ParentName="SkyfallerBase" Abstract="True">
+    <altitudeLayer>Projectile</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
     <size>(1,1)</size>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
@@ -11,6 +13,7 @@
       <shaderType>CutoutFlying</shaderType>
       <drawSize>1.9</drawSize>
     </graphicData>
+    <thingClass>OS_WarPods.UtilityPodIncoming</thingClass>
     <skyfaller>
       <anticipationSound>MortarRound_PreImpact</anticipationSound>
       <!-- [COMMENT: removed] <anticipationSound>DropPod_Fall</anticipationSound> -->

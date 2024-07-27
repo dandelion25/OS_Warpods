@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>MJWarPods_TerminalGuidanceChip</defName>
+    <label>warpod control chip</label>
+    <description>An lightweight microelectronic package necessary for accurate warpod detonation.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/GuidanceChip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <stackLimit>8</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Mass>0.0025</Mass>
+      <Flammability>2</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <costList>
+      <Silver>10</Silver>
+      <Steel>5>/Steel>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <workAmount>800</workAmount>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>WarPods</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <displayPriority>100</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

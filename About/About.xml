@@ -6,7 +6,7 @@
     <li>1.5</li>
   </supportedVersions>
   <packageId>Mjeiouws.Outlander.Warpods</packageId>
-  <description>The expendable transport pod is a ubiquitous technology, used and discarded in the billions by warring outlanders across the Rim to travel long distances in rapid and coordinated fashion.  It is efficient, accurate, and low-cost; despite this, its potential as a weapons delivery platform is often underutilized, constricted by treaty, practicality, and tradition. This is not always the case.\n\nUsed to deploy weapons, warheads, and fortifications, warpods represent an escalation of conflict on the Rim - when diplomacy is no longer an option, and conciliatory tribute is to be neither given nor expected. Use them carefully, or usher in a new age of destruction.</description>
+  <description>The expendable transport pod is a ubiquitous technology, used and discarded in the billions by warring outlanders across the Rim to travel long distances in rapid and coordinated fashion. It is efficient, accurate, and low-cost: perfect for delivering weapons and warheads from the safety of one's base.\n\nNote - this mod is purely XML-based, and so these are essentially slightly modified transport pods; use them accordingly.</description>
 </ModMetaData>
 
 

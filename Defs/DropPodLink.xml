@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <OS_WarPods.UtilityPodDef>
+    <defName>WarPod_HighExplosiveLink</defName>
+    <label>high explosive pod</label>
+    <worldTexture>Things/Special/WarPod_HighExplosive</worldTexture>
+    <buildingDef>WarPod_HighExplosive</buildingDef>
+    <leavingDef>WarPod_HighExplosiveLeaving</leavingDef>
+    <incomingDef>WarPod_HighExplosiveIncoming</incomingDef>
+    <travelingDef>WarPod_HighExplosiveWorld</travelingDef>
+    <HistoryEventDef>WarPod_HarmfulImpactHistoryEventDef</HistoryEventDef>
+    <goodwillImpact>-20</goodwillImpact>
+    <tileBombardmentValue>0.005</tileBombardmentValue>
+    <!-- <payload><ChunkSlagSteel>1</ChunkSlagSteel></payload> -->
+  </OS_WarPods.UtilityPodDef>
+
+  <OS_WarPods.UtilityPodDef>
+    <defName>WarPod_EMPLink</defName>
+    <label>EMP pod</label>
+    <worldTexture>Things/Special/WarPod_EMP</worldTexture>
+    <buildingDef>WarPod_EMP</buildingDef>
+    <leavingDef>WarPod_EMPLeaving</leavingDef>
+    <incomingDef>WarPod_EMPIncoming</incomingDef>
+    <travelingDef>WarPod_EMPWorld</travelingDef>
+    <HistoryEventDef>WarPod_HarmfulImpactHistoryEventDef</HistoryEventDef>
+    <goodwillImpact>-15</goodwillImpact>
+    <payload>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </payload>
+  </OS_WarPods.UtilityPodDef>
+
+  <OS_WarPods.UtilityPodDef>
+    <defName>WarPod_AntigrainLink</defName>
+    <label>antigrain pod</label>
+    <worldTexture>Things/Special/WarPod_Antigrain</worldTexture>
+    <buildingDef>WarPod_Antigrain</buildingDef>
+    <leavingDef>WarPod_AntigrainLeaving</leavingDef>
+    <incomingDef>WarPod_AntigrainIncoming</incomingDef>
+    <travelingDef>WarPod_AntigrainWorld</travelingDef>
+    <HistoryEventDef>WarPod_HarmfulImpactHistoryEventDef</HistoryEventDef>
+    <goodwillImpact>-80</goodwillImpact>
+    <tileBombardmentValue>0.12</tileBombardmentValue>
+  </OS_WarPods.UtilityPodDef>
+
+
+</Defs>
