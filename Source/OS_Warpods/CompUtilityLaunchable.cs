@@ -111,6 +111,11 @@ public class CompUtilityLaunchable : ThingComp
     public GlobalTargetInfo global_target = GlobalTargetInfo.Invalid;
     public LocalTargetInfo local_target = LocalTargetInfo.Invalid;
 
+    public CompUtilityLaunchable()
+    {
+
+    }
+
     public override void PostExposeData()
     {
         base.PostExposeData();
